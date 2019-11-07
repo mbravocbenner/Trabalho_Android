@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/fotoContato"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/person"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="64dp" />
+
+        <EditText
+            android:id="@+id/nomeContato"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:hint="Nome"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="664dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/foneContato"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:hint="Telefone"
+                    android:inputType="phone" />
+
+                <EditText
+                    android:id="@+id/refContato"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:hint="Referencia"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/emailContato"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/foneContato" />
+
+                <EditText
+                    android:id="@+id/enderecoContato"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:hint="Endereco"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fotoContato" />
+
+                <Button
+                    android:id="@+id/btnSalvar"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Salvar"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/refContato" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

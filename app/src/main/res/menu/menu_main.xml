@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.edu.unifcv.agenda.MainActivity">
+    <item
+        android:id="@+id/order_az"
+        android:orderInCategory="100"
+        android:title="Ordenar A-Z"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/order_za"
+        android:orderInCategory="100"
+        android:title="Ordenar Z-A"
+        app:showAsAction="never" />
+</menu>

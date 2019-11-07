@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageFoto"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/person" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textoNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mario Bros"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/textoRef"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ele" />
+
+            <TextView
+                android:id="@+id/textoTelefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(44)99999-0000" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
