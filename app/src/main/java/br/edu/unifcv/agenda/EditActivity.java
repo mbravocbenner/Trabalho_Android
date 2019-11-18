@@ -51,7 +51,7 @@ public class EditActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
-
+        //passando dado para mainActivity
         contato = getIntent().getParcelableExtra( "contato");
 
         Layout = findViewById(R.id.mainLayout);
