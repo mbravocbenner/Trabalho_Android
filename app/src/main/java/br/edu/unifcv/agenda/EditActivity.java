@@ -62,7 +62,8 @@ public class EditActivity extends AppCompatActivity {
         email = findViewById(R.id.emailContato);
         telefone = findViewById(R.id.foneContato);
         endereco = findViewById(R.id.enderecoContato);
-
+        
+        //setando os dados no formulario
         nome.setText(contato.getNome());
         ref.setText(contato.getRef());
         email.setText(contato.getEmail());
